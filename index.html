@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="./js/aframe.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-box color="yellow" position="-4 0 0" rotation="0 60 0" width="2" height="3" depth="0.5">
+                <a-animation attribute="rotation"
+                easing="linear"
+                begin="click"
+                repeat="indefinite"
+                to="0 360 0">
+                </a-animation>
+
+                <a-event name="mouseenter_one" scale="4 1 6"></a-event>
+        </a-box>
+
+        <a-cylinder color="red" position="4 -0.1 0" rotation="0 30 90" width="0.5" height="0.5" depth="0.1" >
+                <a-animation attribute="rotation"
+                easing="linear"
+                begin="click"
+                repeat="indefinite"
+                to="0 360 0">
+                </a-animation>
+
+                <a-event name="mouseenter_two" scale="4 1 6"></a-event>
+        </a-cylinder>
+
+        <a-ring color="blue" position="0 0 -2" radius-inner="1" radius-outer="2">
+                <a-animation attribute="rotation"
+                easing="linear"
+                begin="click"
+                repeat="indefinite"
+                to="360 0 0">
+                </a-animation>
+
+                <a-event name="mouseenter_three" scale="4 1 6"></a-event>
+        </a-ring>
+
+        <a-cone color="black" radius-bottom="1" radius-top="0" position="0 0 2" >
+            <a-animation attribute="rotation"
+                easing="linear"
+                begin="click"
+                repeat="indefinite"
+                to="0 0 360">
+                </a-animation>
+
+                <a-event name="mouseenter_three" scale="4 1 6"></a-event>
+        </a-cone>
+
+        <a-sphere color="gray" radius="2" position="0 5 -5">
+            <a-animation attribute="rotation"
+                easing="linear"
+                begin="click"
+                repeat="indefinite"
+                to="0 0 360">
+                </a-animation>
+
+                <a-event name="mouseenter_three" scale="4 1 6"></a-event>
+        </a-sphere>
+
+        <a-camera position="0 1 5">
+                <a-cursor color="#FFFFFF"/>
+        </a-camera>
+
+        <a-sky src="#" color="#FFFFFF"></a-sky>
+
+    </a-scene>
+</body>
+</html>
